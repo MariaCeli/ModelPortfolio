@@ -1,0 +1,1 @@
+window.Common={},Common.GridAnimation=function(){var i=$(window);i.on("scroll resize",(function(){var o=i.height(),n=i.scrollTop(),t=n+o,a=$(".animation-item");$.each(a,(function(){var i=$(this),o=i.outerHeight(),a=i.offset().top;a+o>=n&&a<=t&&i.addClass("animation-finished")}))})),i.trigger("scroll")};
